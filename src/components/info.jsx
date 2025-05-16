@@ -98,7 +98,7 @@ function Info(props) {
               // Show upload icon if no image
               <div className='icon-upload-div'>
                 <img 
-                  src="../src/assets/images/icon-upload.svg" 
+                  src="./assets/images/icon-upload.svg" 
                   alt="Upload icon" 
                   className="upload-icon"
                 />
@@ -138,7 +138,7 @@ function Info(props) {
           {!props.showUploadError && (
             // Default upload instructions
             <>
-              <img src="../src/assets/images/icon-info.svg" alt="" />
+              <img src="./assets/images/icon-info.svg" alt="" />
               <p className='JPG-para'>
                 Upload your photo (JPG or PNG, max size: 500KB).
               </p>
