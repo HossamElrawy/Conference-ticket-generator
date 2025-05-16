@@ -1,0 +1,121 @@
+/* ===== RESET & BASE STYLES ===== */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect element dimensions */
+}
+
+/* ===== MAIN LAYOUT ===== */
+main {
+    background: url("assets/images/background-desktop.png");
+    position: relative;
+    min-height: 100vh; /* Full viewport height */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    font-family: "Inconsolata", monospace; /* Added fallback font */
+    color: white;
+}
+
+/* ===== DECORATIVE PATTERNS (DESKTOP) ===== */
+/* All patterns have pointer-events: none to prevent interaction */
+.pattern-circle-1 {
+    position: absolute;
+    top: -5.3125rem; /* -85px */
+    left: 2.75rem; /* 44px */
+    pointer-events: none;
+}
+
+.pattern-circle-2 {
+    position: absolute;
+    bottom: 21.875rem; /* 350px */
+    right: 18.125rem; /* 290px */
+    pointer-events: none;
+}
+
+.pattern-lines {
+    position: absolute;
+    top: 0;
+    left: 1.875rem; /* 30px */
+    pointer-events: none;
+}
+
+.pattern-top {
+    position: absolute;
+    top: 5rem; /* 80px */
+    right: 0;
+    pointer-events: none;
+}
+
+.pattern-bottom-desktop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+/* ===== MAIN CONTENT CONTAINER ===== */
+.main-con {
+    padding: 2.5rem 20.4375rem 8.375rem 20.625rem; /* 40px 327px 134px 330px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Hide mobile pattern by default */
+.pattern-bottom-mobile {
+    display: none;
+}
+
+/* ===== MOBILE/TABLET RESPONSIVE STYLES ===== */
+@media (max-width: 50rem) { /* 800px */
+    main {
+        background: url("assets/images/background-mobile.png");
+        background-size: cover;
+        background-position: center;
+    }
+
+    /* Adjusted pattern positions for mobile */
+    .pattern-circle-1 {
+        width: 6.75rem; /* 108px */
+        top: -1.9375rem; /* -31px */
+        left: -1.3125rem; /* -21px */
+    }
+
+    .pattern-top {
+        width: 5.625rem; /* 90px */
+        top: 1.5625rem; /* 25px */
+    }
+
+    /* Adjusted main container padding for mobile */
+    .main-con {
+        padding: 2rem 1rem 7.125rem 1rem; /* 32px 16px 114px 16px */
+    }
+
+    /* Logo size adjustment for mobile */
+    .logo-pic {
+        width: 10.375rem; /* 166px */
+    }
+
+    .pattern-circle-2 {
+        width: 6.75rem; /* 108px */
+        bottom: 10rem; /* 160px */
+        right: -2.875rem; /* -46px */
+    }
+
+    /* Hide desktop pattern on mobile */
+    .pattern-bottom-desktop {
+        display: none;
+    }
+
+    /* Show mobile pattern */
+    .pattern-bottom-mobile {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        pointer-events: none;
+        width: 15.625rem; /* 250px */
+        z-index: 0; /* Ensure it stays behind content */
+    }
+}
