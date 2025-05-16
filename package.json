@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://HossamElrawy.github.io/Conference-ticket-generator/",
+  "homepage": "https://HossamElrawy.github.io/conference-ticket-generator/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
