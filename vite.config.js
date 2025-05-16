@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/conference-ticket-generator/',
   plugins: [react()],
-  build: {
-    assetsDir: 'assets'
-  }
 })
