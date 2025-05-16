@@ -3,6 +3,9 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-    base: '/conference-ticket-generator/', // all lowercase
+  base: '/conference-ticket-generator/',
   plugins: [react()],
+  build: {
+    assetsDir: 'assets'
+  }
 })
