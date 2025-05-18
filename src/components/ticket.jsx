@@ -3,7 +3,7 @@ function Ticket(props) {
         <div className='ticket-con'>
           {/* Main ticket background pattern/image */}
           <img 
-            src="/assets/images/pattern-ticket.svg" 
+            src="./assets/images/pattern-ticket.svg" 
             className='ticket-sel' 
             alt="Ticket background pattern" // Added descriptive alt text
           />
@@ -13,7 +13,7 @@ function Ticket(props) {
             {/* Conference logo and name */}
             <div className='logo-con'>
               <img 
-                src="/assets/images/logo-mark.svg" 
+                src="./assets/images/logo-mark.svg" 
                 className='inside-logo' 
                 alt="Conference logo" 
               />
@@ -43,7 +43,7 @@ function Ticket(props) {
                 </p>
                 <div className='git-hub'>
                   <img 
-                    src="/assets/images/icon-github.svg" 
+                    src="./assets/images/icon-github.svg" 
                     alt="GitHub icon" 
                   />
                   <p className='at-para'>
