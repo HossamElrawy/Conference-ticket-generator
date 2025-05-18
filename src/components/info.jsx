@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import uploadIcon from "../../assets/images/icon-upload.svg" 
+import iconInfo from "../../assets/images/icon-info.svg"
 
 function Info(props) {
   // Create a ref to access the file input element
@@ -98,7 +100,7 @@ function Info(props) {
               // Show upload icon if no image
               <div className='icon-upload-div'>
                 <img 
-                  src="./assets/images/icon-upload.svg" 
+                  src={uploadIcon}
                   alt="Upload icon" 
                   className="upload-icon"
                 />
@@ -138,7 +140,7 @@ function Info(props) {
           {!props.showUploadError && (
             // Default upload instructions
             <>
-              <img src="./assets/images/icon-info.svg" alt="" />
+              <img src={iconInfo} alt="" />
               <p className='JPG-para'>
                 Upload your photo (JPG or PNG, max size: 500KB).
               </p>

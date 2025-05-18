@@ -1,9 +1,13 @@
+import ticket from "../../assets/images/pattern-ticket.svg" 
+import logoPart from "../../assets/images/logo-mark.svg" 
+import gitHubIcon from "../../assets/images/icon-github.svg" 
+
 function Ticket(props) {
     return (<>
         <div className='ticket-con'>
           {/* Main ticket background pattern/image */}
           <img 
-            src="./assets/images/pattern-ticket.svg" 
+            src={ticket}
             className='ticket-sel' 
             alt="Ticket background pattern" // Added descriptive alt text
           />
@@ -13,7 +17,7 @@ function Ticket(props) {
             {/* Conference logo and name */}
             <div className='logo-con'>
               <img 
-                src="./assets/images/logo-mark.svg" 
+                src={logoPart}
                 className='inside-logo' 
                 alt="Conference logo" 
               />
@@ -43,7 +47,7 @@ function Ticket(props) {
                 </p>
                 <div className='git-hub'>
                   <img 
-                    src="./assets/images/icon-github.svg" 
+                    src={gitHubIcon}
                     alt="GitHub icon" 
                   />
                   <p className='at-para'>
