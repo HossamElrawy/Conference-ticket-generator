@@ -70,7 +70,7 @@ main {
 /* ===== MOBILE/TABLET RESPONSIVE STYLES ===== */
 @media (max-width: 50rem) { /* 800px */
     main {
-        background: url("assets/images/background-mobile.png");
+        background: url("/assets/images/background-mobile.png");
         background-size: cover;
         background-position: center;
     }
